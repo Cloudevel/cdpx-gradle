@@ -1,0 +1,11 @@
+task hola {
+    doLast {
+        println '¡Hola, Mundo!'
+    }
+}
+task intro {
+    dependsOn hola
+    doLast {
+        println "Esto es Gradle."
+    }
+}

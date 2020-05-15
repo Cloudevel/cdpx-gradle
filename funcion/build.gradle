@@ -1,0 +1,14 @@
+task mayuscula {
+    doLast {
+        String someString = 'Azi n0 Anlo'
+        println "Original: $someString"
+        println "En mayúsculas: ${someString.toUpperCase()}"
+    }
+}
+
+
+task cuenta {
+    doLast {
+        4.times { print "$it " }
+    }
+}
