@@ -1,0 +1,20 @@
+defaultTasks 'limpia', 'corre'
+
+task limpia {
+    doLast {
+        println '¡Limpiando por default!'
+    }
+}
+
+task corre {
+    doLast {
+        println '¡Corriendo por default!'
+    }
+}
+
+task otra {
+    doLast {
+        println "Soy otra tarea."
+    }
+}
+

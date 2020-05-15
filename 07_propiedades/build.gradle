@@ -1,0 +1,9 @@
+task miTarea {
+    ext.miPropiedad = "valor"
+}
+
+task despliegaPropiedad {
+    doLast {
+        println miTarea.miPropiedad    }
+}
+

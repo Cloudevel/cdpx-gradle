@@ -1,0 +1,20 @@
+task hola {
+    doLast {
+        println 'En medio'
+    }
+}
+hola.doFirst {
+    println 'Primero'
+}
+hola.configure {
+    doLast {
+        println 'Penúltimo'
+    }
+}
+hola.configure {
+    doLast {
+        println 'Último'
+    }
+}
+
+

@@ -1,0 +1,8 @@
+task hola {
+    doLast {
+        println '¡Hola,mundo!'
+    }
+}
+hola.doLast {
+    println"Esta es la tarea $hola.name."
+}
